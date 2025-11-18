@@ -1,5 +1,5 @@
 import React from "react";
-import UserTable from "./components/UserTable";
+import UserTable from "./Components/UserTable.jsx";
 
 export default function App() {
   return (
