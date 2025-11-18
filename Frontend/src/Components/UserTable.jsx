@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
-import LoadingSpinner from "./Components/LoadingSpinner";
+import LoadingSpinner from "./Components/LoadingSpinner.jsx";
 
 export default function UserTable() {
   const [users, setUsers] = useState([]); // all aggregated users
@@ -171,3 +171,4 @@ export default function UserTable() {
     </div>
   );
 }
+
