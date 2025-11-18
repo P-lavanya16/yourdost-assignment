@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* small customizations */
+:root{
+  --brand: #6366f1;
+}
+
+/* subtle scrollbar */
+::-webkit-scrollbar { height: 10px; width: 8px; }
+::-webkit-scrollbar-thumb { background: rgba(99,102,241,0.25); border-radius: 999px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+/* smooth appear animation for table rows */
+@keyframes appearUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.row-appear { animation: appearUp .28s ease both; }
+/* slower spin so it's gentle like Google loader */
+@keyframes spin-slow { from { transform: rotate(0deg);} to { transform: rotate(360deg);} }
+.animate-spin-slow { animation: spin-slow 1.1s linear infinite; }
